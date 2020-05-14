@@ -1,2 +1,2 @@
 # hi-themes-refind
- Multi-themes for refind
+ Multi-themes for refined
