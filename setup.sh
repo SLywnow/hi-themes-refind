@@ -13,7 +13,7 @@ echo "Wlcome to hi-themes for rEFInd Installation script!"
 
 # Exit when an error
 set -e
-trap 'echo "\"${last_command}\" command filed with exit code $?."' EXIT
+trap 'echo "close setup.sh"' EXIT
 
 
 if [ ! -d "$1" ]; then
@@ -48,6 +48,7 @@ if [ $instaltype = 1 ]; then
     slconfshd=1
     slconfrb=0
     slconfext=0
+	deletefiles=1
 elif [ $instaltype = 2 ]; then 
     echo "Light selected, generating the theme..."
     slcurbgs=2
@@ -57,6 +58,7 @@ elif [ $instaltype = 2 ]; then
     slconfshd=1
     slconfrb=0
     slconfext=0
+	deletefiles=1
 elif [ $instaltype = 3 ]; then 
     echo "Red selected, generating the theme..."
     slcurbgs=3
@@ -66,6 +68,7 @@ elif [ $instaltype = 3 ]; then
     slconfshd=1
     slconfrb=0
     slconfext=0
+	deletefiles=1
 elif [ $instaltype = 4 ]; then 
     echo "Green selected, generating the theme..."
     slcurbgs=4
@@ -75,6 +78,7 @@ elif [ $instaltype = 4 ]; then
     slconfshd=1
     slconfrb=0
     slconfext=0
+	deletefiles=1
 elif [ $instaltype = 5 ]; then 
     echo "Blue selected, generating the theme..."
     slcurbgs=5
@@ -84,6 +88,7 @@ elif [ $instaltype = 5 ]; then
     slconfshd=1
     slconfrb=0
     slconfext=0
+	deletefiles=1
 elif [ $instaltype = 6 ]; then 
     echo "Purple selected, generating the theme..."
     slcurbgs=6
@@ -93,6 +98,7 @@ elif [ $instaltype = 6 ]; then
     slconfshd=1
     slconfrb=0
     slconfext=0
+	deletefiles=1
 fi 
 
 #Custom
@@ -137,6 +143,13 @@ if [ $instaltype = 0 ]; then
     read -p "" ext 
     if [ "$ext" = "Y" -o "$ext" = "y" ]; then
         slconfext=1
+    fi
+	
+	echo "----Final----"
+    echo "Do you want clear temp theme files (default yes)? [y/n]"
+    read -p "" ext 
+    if [ "$ext" = "Y" -o "$ext" = "y" ]; then
+        deletefiles=1
     fi
 
     slcurbgs=$bgs
@@ -265,10 +278,14 @@ else
     echo "Files founded! Moving theme to refind/themes and add hi-theme to config..."
 fi 
 
+#exit 0
+
 #Move to refind
 mkdir -p $DEST_DIR
 cp -r $INSTALLER_DIR/hi-theme/* $DEST_DIR
-rm -Rf $INSTALLER_DIR/hi-theme
+if [ $deletefiles = 1 ]; then
+    rm -Rf $INSTALLER_DIR/hi-theme
+fi 
 
 # Disable other themes
 if [ -f "${REFIND_DIR}/refind.conf" ]; then
