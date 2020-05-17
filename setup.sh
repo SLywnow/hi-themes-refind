@@ -40,7 +40,7 @@ read -p "№ " instaltype
 
 #Presets
 if [ $instaltype = 1 ]; then 
-    echo "Dark selected, generating the theme..."
+    echo "Dark selected, generating theme..."
     slcurbgs=1
     slcuricons=2
     slcurseltpe=1
@@ -50,7 +50,7 @@ if [ $instaltype = 1 ]; then
     slconfext=0
 	deletefiles=1
 elif [ $instaltype = 2 ]; then 
-    echo "Light selected, generating the theme..."
+    echo "Light selected, generating theme..."
     slcurbgs=2
     slcuricons=1
     slcurseltpe=2
@@ -60,7 +60,7 @@ elif [ $instaltype = 2 ]; then
     slconfext=0
 	deletefiles=1
 elif [ $instaltype = 3 ]; then 
-    echo "Red selected, generating the theme..."
+    echo "Red selected, generating theme..."
     slcurbgs=3
     slcuricons=3
     slcurseltpe=3
@@ -70,7 +70,7 @@ elif [ $instaltype = 3 ]; then
     slconfext=0
 	deletefiles=1
 elif [ $instaltype = 4 ]; then 
-    echo "Green selected, generating the theme..."
+    echo "Green selected, generating theme..."
     slcurbgs=4
     slcuricons=4
     slcurseltpe=4
@@ -80,7 +80,7 @@ elif [ $instaltype = 4 ]; then
     slconfext=0
 	deletefiles=1
 elif [ $instaltype = 5 ]; then 
-    echo "Blue selected, generating the theme..."
+    echo "Blue selected, generating theme..."
     slcurbgs=5
     slcuricons=5
     slcurseltpe=4
@@ -90,7 +90,7 @@ elif [ $instaltype = 5 ]; then
     slconfext=0
 	deletefiles=1
 elif [ $instaltype = 6 ]; then 
-    echo "Purple selected, generating the theme..."
+    echo "Purple selected, generating theme..."
     slcurbgs=6
     slcuricons=6
     slcurseltpe=2
@@ -157,7 +157,7 @@ if [ $instaltype = 0 ]; then
     slcurseltpe=$seltpe
     slcurselcol=$selcl
     
-    echo "Options accepted, generating the theme..."
+    echo "Options accepted, generating theme..."
 fi
 
 
