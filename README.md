@@ -1,4 +1,4 @@
-# Istall
+# Install
 Only script install
 Run:
 
