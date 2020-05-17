@@ -1,11 +1,11 @@
 # Istall
 Only script install
 Run:
-> git copy https://github.com/SLywnow/hi-themes-refind
+<code>git copy https://github.com/SLywnow/hi-themes-refind</code>
 And then:
->sudo ./hi-themes-refind/setup.sh -rEFInd_directory-
+<code>sudo ./hi-themes-refind/setup.sh -rEFInd_directory-</code>
 Example:
->sudo ./hi-themes-refind/setup.sh /boot/efi/EFI/rEFInd/
+<code>sudo ./hi-themes-refind/setup.sh /boot/efi/EFI/rEFInd/</code>
 
 You can make your own theme, or use preset;
 
