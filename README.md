@@ -16,11 +16,17 @@ Example:
 You can make your own theme, or use preset;
 
 # Presets
+Dark Preset
 ![Dark Preset](https://github.com/SLywnow/hi-themes-refind/blob/master/examples/Screenshot%202020517233825602.png?raw=true)
+Light Preset
 ![Light Preset](https://github.com/SLywnow/hi-themes-refind/blob/master/examples/Screenshot%202020517233921903.png?raw=true)
+Red Preset
 ![Red Preset](https://github.com/SLywnow/hi-themes-refind/blob/master/examples/Screenshot%202020517234012889.png?raw=true)
+Green Preset
 ![Green Preset](https://github.com/SLywnow/hi-themes-refind/blob/master/examples/Screenshot%202020517233852312.png?raw=true)
+Blue Preset
 ![Blue Preset](https://github.com/SLywnow/hi-themes-refind/blob/master/examples/Screenshot%202020517233742436.png?raw=true)
+Purple Preset
 ![Purple Preset](https://github.com/SLywnow/hi-themes-refind/blob/master/examples/Screenshot%202020517233951718.png?raw=true)
 
 # Custom Examples
