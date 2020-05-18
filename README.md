@@ -1,3 +1,4 @@
+![logo](https://github.com/SLywnow/hi-themes-refind/blob/master/logo.png?raw=true)
 # Install
 Only script install avaible.
 Download installer first:
