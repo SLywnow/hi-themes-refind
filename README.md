@@ -1,14 +1,14 @@
 # Install
-Only script install
-Run:
+Only script install avaible.
+Download installer first:
 
-<code>git copy https://github.com/SLywnow/hi-themes-refind</code>
+<code>git clone https://github.com/SLywnow/hi-themes-refind</code>
 
-And then:
+And then run installation script:
 
 <code>sudo ./hi-themes-refind/setup.sh -rEFInd_directory-</code>
 
-Example:
+For example:
 
 <code>sudo ./hi-themes-refind/setup.sh /boot/efi/EFI/rEFInd/</code>
 
